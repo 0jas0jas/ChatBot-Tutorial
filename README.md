@@ -162,4 +162,4 @@ async def on_message(message):
 
 ## We are done!
 
-We're done. Yes, sahi mein. Try it. Play with your bot. However, you SHOULDDDDDD remember that with great power comes great responsibility. Nah, I'm just kidding. Go nuts. But but but this is just the VERY VERY basic of AI and bot making on python. With this knowledge you can go ahead and do other cool stuff with it. Only your imagination is the limit. You have your own discord bot now, your own AI chatbot and your fresh python skills. Well done!
+We're done. Yes, sahi mein. Try it. Play with your bot. However, you SHOULDDDDDD remember that with great power comes great responsibility. Nah, I'm just kidding. Go nuts. But but but this is just the VERY VERY basic of AI and bot making on python. With this knowledge you can go ahead and do other cool stuff with it. Sky's the limit. You have your own discord bot now, your own AI chatbot and your fresh python skills. Well done!
