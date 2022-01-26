@@ -28,7 +28,7 @@ Okay we're set.
 
 ![All set](https://media.giphy.com/media/TwmEnGgxdUT4Y/giphy.gif)
 
-##Getting Started
+## Getting Started
 
 To make it easier for us to start, I have written some code already. 
 
