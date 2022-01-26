@@ -137,6 +137,7 @@ corpus_trainer = ChatterBotCorpusTrainer(my_bot)
 corpus_trainer.train('chatterbot.corpus.english')
 ```
    How about training our bot like we did? I mean, training shouldn't be any different, right? Yeah, this looks fine. Our bot is all grown up.
+
 3. The final step. ACTUALLY making our bot say something in the discord server. Here, we'll just modify our last code a little to make it more "discord".
 ```py
 @client.event
