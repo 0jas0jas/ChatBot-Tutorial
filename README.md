@@ -154,7 +154,7 @@ async def on_message(message):
     await message.channel.send(bot_response)
 
 ```
-   ta daaaaaaa! This is just both the code merged. We took the discord async function `on_message` which does something when the user messages. What does it do? It take the `message.content` which is whatever was IN that text that the user just sent on the server and puts it into the variable `bot_input`. After this, it asks our AI bot to generate some response and store it in the variable `bot_response`. Finally, we just sent this variable as a text to whatever channel was open in the discord server. There. Done.
+   Ta daaaaaaa! This is just both the code merged. We took the discord async function `on_message` which does something when the user messages. What does it do? It take the `message.content` which is whatever was IN that text that the user just sent on the server and puts it into the variable `bot_input`. After this, it asks our AI bot to generate some response and store it in the variable `bot_response`. Finally, we just sent this variable as a text to whatever channel was open in the discord server. There. Done.
 
 4. And we've done it once againnn!
 
