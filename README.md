@@ -44,6 +44,7 @@ my_bot = ChatBot(name="MyBot",
                 logic_adapters=["chatterbot.logic.MathematicalEvaluation", "chatterbot.logic.BestMatch"])
 ```
    This code imports a bunch of stuff and initalises your bot. This means that after this code, your bot ACTUALLY EXISTS in your code. We always do this in python.
+
 3. The next lines are data that we'll give to our bot to learn. Our bot is going to read this data and learn from it (in literally seconds).
 ```py
 small_talk = [
