@@ -13,7 +13,7 @@ So for this project, we'll need 4 "dependencies".
 - discord
 
 ### What is ChatterBox?
-It's a really cool set of pre-written code that we'll use to train our bot. Yes, train. This is AI, yo. Artificial Intelligence always needs training. Chatterbot helps us provide the right tools to train our bot super easily. Speaking of training, we need data to train our bot. That data is provided by `chatterbot-corpus`. A corpus is a collection of text. This text will go into our bot and our bot will read all of this and learn from it. (It doesn't need 10 years old schooling, no)
+It's a really cool set of pre-written code that we'll use to train our bot. Yes, train. This is AI, yo. Artificial Intelligence always needs training. Chatterbot helps us provide the right tools to train our bot super easily. Speaking of training, we need data to train our bot. That data is provided by `chatterbot-corpus`. A corpus is a collection of text. This text will go into our bot and our bot will read all of this and learn from it. (It doesn't need 10 years of schooling, no)
 
 ### What is discord?
 Discord! Your favourite messaging app has a python dependancy package. This is basically `discord.py` (google it!). It's set of pre-written code by Discord for us to interact with discord with code and and andddddd make botsssss! So we'll make our chatbot on discord using discord (or discord.py).
@@ -114,7 +114,7 @@ client.run('your token here')
 
    You'll notice some code from our previous program. This IS actually a whole discord bot which will say "Hello!" if you say "$hello". The "your token here" is where you secret token goes that you got while making this discord bot on their website.
    
-2. Now the task remains to merge our previously made AI chatbot to this discord bot. HMMMMMHHHHH. Okay, let's try THIS:
+2. Now the task remains to merge our previously made AI chatbot to this discord bot. Okay, let's try THIS:
 ```py
 small_talk = [
   "yo",
@@ -154,7 +154,7 @@ async def on_message(message):
     await message.channel.send(bot_response)
 
 ```
-   Ta daaaaaaa! This is just both the code merged. We took the discord async function `on_message` which does something when the user messages. What does it do? It take the `message.content` which is whatever was IN that text that the user just sent on the server and puts it into the variable `bot_input`. After this, it asks our AI bot to generate some response and store it in the variable `bot_response`. Finally, we just sent this variable as a text to whatever channel was open in the discord server. There. Done.
+   Ta daaaaaaa! This is just both the codes merged. We took the discord async function `on_message` which does something when the user messages. What does it do? It take the `message.content` which is whatever was IN that text that the user just sent on the server and puts it into the variable `bot_input`. After this, it asks our AI bot to generate some response and store it in the variable `bot_response`. Finally, we just sent this variable as a text to whatever channel was open in the discord server. There. Done.
 
 4. And we've done it once againnn!
 
