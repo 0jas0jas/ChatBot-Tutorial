@@ -26,6 +26,8 @@ pip install <DEPENDENCY>
 
 Okay we're set.
 
+![All set](https://media.giphy.com/media/TwmEnGgxdUT4Y/giphy.gif)
+
 ##Getting Started
 
 To make it easier for us to start, I have written some code already. 
@@ -41,3 +43,44 @@ my_bot = ChatBot(name="MyBot",
                 read_only=True,
                 logic_adapters=["chatterbot.logic.MathematicalEvaluation", "chatterbot.logic.BestMatch"])
 ```
+      This code imports a bunch of stuff and initalises your bot. This means that after this code, your bot ACTUALLY EXISTS in your code. We always do this in python.
+3. The next lines are data that we'll give to our bot to learn. Our bot is going to read this data and learn from it (in literally seconds).
+```py
+small_talk = [
+  "yo",
+  "HELLO!",
+  "how's life",
+  "Life's good",
+  "Goodbye!",
+  "Bye bye!"
+]
+
+math_talk = [
+  "Pythagoras' theorm",
+  "A squared plus b squared is equal to c squared"
+]
+
+list_trainers = ListTrainer(my_bot)
+for item in (small_talk, math_talk):
+  list_trainers.train(item)
+
+corpus_trainer = ChatterBotCorpusTrainer(my_bot)
+corpus_trainer.train('chatterbot.corpus.english')
+```
+4. Now that our bot is well read and well educated. It's time for it to go out there and live its life. Now is the time. This code will actually make your bot take input and give out output.
+```py
+while True:
+  bot_input = input("You: ")
+  bot_response = my_bot.get_response(bot_input)
+  print(f"{my_bot.name}: {bot_response}")
+```
+5. AAAAND you're done. See, I told you it'll be hard.
+
+![yayyyyyyyyy](https://media.giphy.com/media/jd6TVgsph6w7e/giphy.gif)
+
+
+## Wait... this isn't discord-
+
+Yes, I know, dummy. NOW is the discord part. You've done well, padawan. Now open the next file `discordBot.py`. I have some secret already-written code for you there.
+
+1. 
