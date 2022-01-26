@@ -43,7 +43,7 @@ my_bot = ChatBot(name="MyBot",
                 read_only=True,
                 logic_adapters=["chatterbot.logic.MathematicalEvaluation", "chatterbot.logic.BestMatch"])
 ```
-      This code imports a bunch of stuff and initalises your bot. This means that after this code, your bot ACTUALLY EXISTS in your code. We always do this in python.
+   This code imports a bunch of stuff and initalises your bot. This means that after this code, your bot ACTUALLY EXISTS in your code. We always do this in python.
 3. The next lines are data that we'll give to our bot to learn. Our bot is going to read this data and learn from it (in literally seconds).
 ```py
 small_talk = [
@@ -111,7 +111,7 @@ async def on_message(message):
 client.run('your token here')
 ```
 
-      You'll notice some code from our previous program. This IS actually a whole discord bot which will say "Hello!" if you say "$hello". The "your token here" is where you secret token goes that you got while making this discord bot on their website.
+   You'll notice some code from our previous program. This IS actually a whole discord bot which will say "Hello!" if you say "$hello". The "your token here" is where you secret token goes that you got while making this discord bot on their website.
 2. Now the task remains to merge our previously made AI chatbot to this discord bot. HMMMMMHHHHH. Okay, let's try THIS:
 ```py
 small_talk = [
@@ -135,7 +135,7 @@ for item in (small_talk, math_talk):
 corpus_trainer = ChatterBotCorpusTrainer(my_bot)
 corpus_trainer.train('chatterbot.corpus.english')
 ```
-      How about training our bot like we did? I mean, training shouldn't be any different, right? Yeah, this looks fine. Our bot is all grown up.
+   How about training our bot like we did? I mean, training shouldn't be any different, right? Yeah, this looks fine. Our bot is all grown up.
 3. The final step. ACTUALLY making our bot say something in the discord server. Here, we'll just modify our last code a little to make it more "discord".
 ```py
 @client.event
@@ -151,7 +151,7 @@ async def on_message(message):
     await message.channel.send(bot_response)
 
 ```
-      ta daaaaaaa! This is just both the code merged. We took the discord async function `on_message` which does something when the user messages. What does it do? It take the `message.content` which is whatever was IN that text that the user just sent on the server and puts it into the variable `bot_input`. After this, it asks our AI bot to generate some response and store it in the variable `bot_response`. Finally, we just sent this variable as a text to whatever channel was open in the discord server. There. Done.
+   ta daaaaaaa! This is just both the code merged. We took the discord async function `on_message` which does something when the user messages. What does it do? It take the `message.content` which is whatever was IN that text that the user just sent on the server and puts it into the variable `bot_input`. After this, it asks our AI bot to generate some response and store it in the variable `bot_response`. Finally, we just sent this variable as a text to whatever channel was open in the discord server. There. Done.
 4. And we've done it once againnn!
 
 ![we winnnn!](https://media.giphy.com/media/3o7ZeTmU77UlPyeR2w/giphy.gif)
