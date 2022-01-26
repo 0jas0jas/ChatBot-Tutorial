@@ -82,7 +82,7 @@ while True:
 
 ## Wait... this isn't discord-
 
-Yes, I know, dummy. NOW is the discord part. You've done well, padawan. Now open the next file `discordBot.py`. I have some secret already-written code for you there.
+Yes, I know. NOW is the discord part. You've done well, padawan. Now open the next file `discordBot.py`. I have some secret already-written code for you there.
 
 1. So this code is, actually, of a complete discord bot. It goes:
 ```py
