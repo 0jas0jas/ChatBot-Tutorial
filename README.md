@@ -112,6 +112,7 @@ client.run('your token here')
 ```
 
    You'll notice some code from our previous program. This IS actually a whole discord bot which will say "Hello!" if you say "$hello". The "your token here" is where you secret token goes that you got while making this discord bot on their website.
+   
 2. Now the task remains to merge our previously made AI chatbot to this discord bot. HMMMMMHHHHH. Okay, let's try THIS:
 ```py
 small_talk = [
