@@ -98,7 +98,7 @@ my_bot = ChatBot(name="MyBot",
                 logic_adapters=["chatterbot.logic.MathematicalEvaluation", "chatterbot.logic.BestMatch"])
 
 @client.event
-async def on_ready():
+-  on_ready():
     print('We have logged in as {0.user}'.format(client))
 
 @client.event
@@ -159,6 +159,11 @@ async def on_message(message):
 4. And we've done it once againnn!
 
 ![we winnnn!](https://media.giphy.com/media/3o7ZeTmU77UlPyeR2w/giphy.gif)
+
+## Confusing words
+
+- `import`: Sometimes we need more functionality in our code. We can't code every possible algorithm everytime we write code, so we use something called "libraries". This is code written by other people, for you! The code is usually bulletproof so you won't encounter bugs running the code. How do you include these libraries in your code, you ask? Just use the `import` keyword on top of your file. What this, very simply, does is that it puts the entire block of code in the library you imported on top of your python file. So you could imagine your python file having a whole bunch of extra code before your code which you can use to do cool things!
+- `async def`: In Python, we keep code in useful blocks called "functions" which you can make just by writing something like `def <functionName>`. These are reusable blocks of code which you can use anywhere you want in your program. SOMETIMES you need your functions to run not when you call it but **all the time**. This is where `async` comes in. It stands for asynchronous coroutine function. Asynchronous means that it runs whenever it's required automatically without anyone needing to call it. In our case, it's useful because, for example, the function "onMessage" is useful to be asynchronous because we want to run it whenever there's a new message automatically without us calling it. 
 
 ## We are done!
 
